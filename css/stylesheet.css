@@ -1,0 +1,476 @@
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+	* {
+		box-sizing: border-box;
+		/*border: solid black 1px;*/
+	}
+	
+	body {
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 10px;
+		font-family: sans-sefir, serif;
+	}
+	
+	p {
+		margin: 20px;
+		text-indent: 20px;
+	}
+	
+	p a {
+		text-decoration: none;
+	}
+	
+	nav {
+		float: right;
+	}
+	
+	nav a {
+		text-decoration: none;
+		color: white;
+	}
+	
+	footer {
+		position: relative;
+		bottom: 0;
+		margin-top: 20px;
+		width: 100%;
+		color: black;
+	}
+	
+	input[type=number] {
+		width: 15%;
+		padding: 5px;
+		float: right;
+	}
+	
+	table {
+		border: 1px solid black;
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	th{
+		border: 2px solid black;
+		padding: 5px;
+		margin: 20px;
+		background-color: #4CAF50;
+		color: black;
+	}
+	
+	td {
+		border: 1px solid black;
+		padding: 5px;
+		margin: 20px;
+	}
+	
+	tr:nth-child(even){background-color: #f2f2f2}
+	
+	tfoot td {
+		border: 3px solid black;
+		padding: 5px;
+		margin: 20px;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+		background-color: white;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		margin-top: 20px;
+	}
+	
+	form label, form input, form textarea {
+		margin-left: 5px;
+	}
+	
+	#header {
+		text-align: center;
+	}
+	
+	#logo {
+		position: relative;
+		width: 15%;
+		float: left;
+		padding-left: 0;
+	}
+	
+	#title {
+		position: relative;
+		width: 85%;
+		float: left;
+		font-style: italic;
+		text-align: left;
+	}
+	
+	#navigation ul {
+		list-style: none;
+		position: relative;
+	}
+	
+	#navigation li {
+		float: left;
+		padding: 5px;
+		margin-right: 1px;
+		margin-top: 1px;
+	}
+	
+	#navigation li:hover {
+		background-color: #1119;
+	}
+	
+	#contactinfo {
+		border-top: solid black 1px;
+		width: 100%;
+		color: black;
+	}
+	
+	#contactinfo ul {
+		list-style: none;
+		margin-top: 0;
+	}
+	
+	#contactinfo ul li {
+		text-decoration: none;
+		padding: 5px;
+		display: inline;
+	}
+	
+	#contactinfo ul li a img {
+		width: 10%;
+		height: 10%;
+		margin-left: 10%;
+	}
+	
+	#contactinfo ul li a:hover {
+		color: black;
+	}
+	
+	#copyright {
+		display: block;
+		width: 100%;
+		text-align: right;
+		color: black;
+	}
+	
+	#companyName {
+		margin-bottom: 0;
+	}
+	
+	#companySlogan {
+		margin-top: 0;
+	}
+	
+	#contactform {
+		position: relative;
+		width: 100%;
+		margin: 20px;
+		padding: 20px;
+		background-color: #81b8e0;
+	}
+	
+	#mycart {
+		position: relative;
+		width: 100%;
+	}
+	
+	#clear, #checkout {
+		position: relative;
+		background-color: #eba640;
+		display: inline;
+		padding: 10px;
+		border-radius: 2px;
+		margin: 10px;
+		font-weight: bold;
+	}
+	
+	#clear:hover, #checkout:hover {
+		cursor: pointer;
+	}
+	
+	#clear:active, #checkout:active {
+		cursor: pointer;
+		padding: 11px;
+		margin: 9px;
+	}
+	
+	#controls {
+		width: 95%;
+		position: relative;
+	}
+	
+	#controls div {
+		float: right;
+	}
+	
+	.pointer {
+		cursor: pointer;
+	}
+	
+	.pointer:hover {
+		background-color: #81b8e0;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	.nomargin {
+		margin: 0;
+	}
+	
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.noindent {
+		text-indent: 0;
+	}
+	
+	.left {
+		float: left;
+	}
+	
+	.right {
+		float: right;
+	}
+	
+	.black {
+		background-color: #111;
+	}
+	
+	.white {
+		color: white;
+	}
+	
+	.bold {
+		font-weight: bold;
+	}
+	
+	.center {
+		text-align: center;
+	}
+	
+	.round {
+		border-radius:10px;
+	}
+	
+	.description {
+		width: 70%;
+	}
+	
+	.sideimg {
+		width: 30%;
+	}
+	
+	.box-shadow {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	.currentpagemenu {
+		background-color: #1119;
+	}
+	
+}
+
+@media only screen and (max-width: 760px) {
+
+	* {
+		display: block;
+		/*border: solid black 1px;*/
+	}
+
+	body {
+		margin: 10px;
+		padding: 10px;
+	}
+
+	span {
+		display: inline;
+	}
+
+	#main img {
+		width: 100%;
+	}
+
+	#navigation nav ul {
+		display: hidden;
+	}
+
+	/*Strip the ul of padding and list styling*/
+	#navigation nav ul {
+		list-style-type:none;
+    	margin:0;
+    	padding:0;
+	}
+
+	/*Create a horizontal list with spacing*/
+	#navigation nav ul li {
+		margin-right: 1px;
+	}
+
+	/*Style for menu links*/
+	#navigation nav ul li a {
+		min-width:140px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #fff;
+		background: #2f3036;
+		text-decoration: none;
+	}
+	/*Hover state for top level links*/
+	#navigation nav ul li:hover a {
+		background: #19c589;
+	}
+	/*Style for dropdown links*/
+	#navigation nav ul li:hover ul a {
+		background: #f3f3f3;
+		color: #2f3036;
+		height: 40px;
+		line-height: 40px;
+	}
+	/*Hover state for dropdown links*/
+	#navigation nav ul li:hover ul a:hover {
+		background: #19c589;
+		color: #fff;
+	}
+
+	#contactinfo {
+		display: block;
+		width: 100%;
+	}
+
+	#contactinfo ul li {
+		position: relative;
+		float: left;
+		width: 25%;
+	}
+
+	#contactinfo ul li img{
+		width: 40%;
+		height: 40%;
+	}
+
+	#copyright {
+		position: relative;
+		padding: 5px;
+		float: right;
+		text-align: right;
+	}
+
+	#send, #reset {
+		display: inline;
+	}
+
+	#contactform {
+		margin-top: 20px;
+		padding: 20px;
+		background-color: #81b8e0;
+	}
+
+	#clear, #checkout {
+		position: relative;
+		background-color: #eba640;
+		display: inline;
+		padding: 10px;
+		border-radius: 2px;
+		margin: 10px;
+		font-weight: bold;
+	}
+
+	#clear:hover, #checkout:hover {
+		cursor: pointer;
+	}
+	
+	#clear:active, #checkout:active {
+		cursor: pointer;
+		padding: 11px;
+		margin: 9px;
+	}
+
+	#controls {
+		width: 95%;
+		position: relative;
+	}
+	
+	#controls div {
+		float: right;
+		margin: 20px;
+	}
+
+	#mycart {
+		position: relative;
+		margin-top: 20px;
+		width: 80%;
+		left: 10%;
+	}
+
+	table {
+		border: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	th {
+		display: none;
+	}
+	
+	td {
+		border-bottom: solid black 1px;
+		padding-left: 50%;
+	}
+
+	td:before {
+		position: absolute;
+		left: 5px;
+	}
+
+	tr {
+		margin-bottom: 20px;
+	}
+	
+	tr:nth-child(even){background-color: #f2f2f2}
+
+	tbody tr {
+		border: solid black 2px;
+	}
+
+	tfoot tr {
+		border: solid black 2px;
+	}
+
+	tbody td:nth-of-type(1):before {
+		content: "Item Name: ";
+		font-weight: bold;
+	}
+
+	tbody td:nth-of-type(2):before {
+		content: "Price: ";
+		font-weight: bold;
+	}
+
+	tbody td:nth-of-type(3):before {
+		content: "Qty: ";
+		font-weight: bold;
+	}
+
+	tbody td:nth-of-type(4):before {
+		content: "Total: ";
+		font-weight: bold;
+	}
+
+	tfoot td:nth-of-type(1):before {
+		content: "Total Qty: ";
+		font-weight: bold;
+	}
+
+	tfoot td:nth-of-type(2):before {
+		content: "Total Price: ";
+		font-weight: bold;
+	}
+}
