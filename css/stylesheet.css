@@ -288,9 +288,19 @@
 		/*border: solid black 1px;*/
 	}
 
+	title {
+		display: none;
+	}
+
 	body {
 		margin: 10px;
 		padding: 10px;
+		background-color: #EEEEEE;
+		z-index: -1;
+	}
+
+	footer {
+		background-color: #78909C;
 	}
 
 	span {
@@ -319,6 +329,14 @@
 		width: 100%;
 	}
 
+	#navigation {
+		background-color: #00695c;
+	}
+
+	#main {
+		background-color: #EFEBE9;
+	}
+
 	#navigation nav ul {
 		display: none;
 	}
@@ -342,7 +360,7 @@
 	}
 
 	#dropdown {
-		width: 25%;
+		width: 100%;
 	}
 
 	#dropdown a {
@@ -397,6 +415,7 @@
 		display: block;
 		width: 100%;
 		border-top: solid lightgray 1px;
+		background-color: #A1887F;
 	}
 
 	#contactinfo ul li {
@@ -428,11 +447,11 @@
 	}
 
 	#checkout {
-		background-color: #e49012;
+		background-color: #FF6F00;
 	}
 
 	#clear {
-		background-color: #eba640;
+		background-color: #FFD54F;
 	}
 
 	#clear, #checkout {
@@ -464,10 +483,44 @@
 		width: 100%;
 	}
 
+	.add {
+		background-color: #FF6F00;
+		text-align: center;
+		font-weight: bold;
+		width: 50%;
+		position: relative;
+		left: 25%;
+		margin: 5px;
+		padding: 1px;
+		border-radius: 2px;
+		box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.add:hover {
+		box-shadow: 0 0 0 0;
+	}
+
+	.add {
+		background-color: #FF6F00;
+		text-align: center;
+		font-weight: bold;
+		width: 50%;
+		position: relative;
+		left: 25%;
+		margin: 5px;
+		padding: 1px;
+		border-radius: 2px;
+		box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.add:hover {
+		box-shadow: 0 0 0 0;
+	}
+
 	table {
 		border: none;
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	
 	th {
@@ -485,10 +538,10 @@
 	}
 
 	tr {
-		margin-bottom: 20px;
+		margin-bottom: 5px;
 	}
 	
-	tr:nth-child(even){background-color: #f2f2f2}
+	tr:nth-child(even){background-color: #FFF3E0;}
 
 	tbody tr {
 		border: solid black 2px;
@@ -496,7 +549,7 @@
 
 	tfoot tr {
 		border: solid black 2px;
-		background-color: rgb(236, 146, 28);
+		background-color: #E65100;
 	}
 
 	tbody td:nth-of-type(1):before {
