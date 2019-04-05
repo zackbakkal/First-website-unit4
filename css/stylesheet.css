@@ -293,6 +293,10 @@
 		padding: 10px;
 	}
 
+	span {
+		display: inline;
+	}
+
 	p {
 		font-size: 1.1em;
 	}
