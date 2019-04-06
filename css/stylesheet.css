@@ -29,6 +29,10 @@
 		text-decoration: none;
 		color: white;
 	}
+
+	nav div ul li {
+		font-size: .9em;
+	}
 	
 	footer {
 		position: relative;
@@ -46,8 +50,7 @@
 	
 	table {
 		border: 1px solid black;
-		width: 80%;
-		margin-left: 10%;
+		width: 100%;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -201,7 +204,7 @@
 	#controls {
 		width: 50%;
 		position: relative;
-		left: 25%;
+		left: 50%;
 	}
 	
 	#controls div {
@@ -209,16 +212,31 @@
 		width: 100%;
 		padding: 1px;
 		margin: 10px;
+		box-shadow: 0 0 5px 2px #2f3036;
+	}
+
+	#controls div:active {
+		box-shadow: 0 0 0 0;
+	}
+
+	.add {
+		background-color: #FF6F00;
+		font-weight: bold;
+		width: 50%;
+		position: relative;
+		left: 25%;
+		margin: 5px;
+		padding: 1px;
+		border-radius: 2px;
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	.add:active {
+		box-shadow: 0 0 0 0;
 	}
 	
 	.pointer {
 		cursor: pointer;
-	}
-	
-	.pointer:hover {
-		background-color: #81b8e0;
-		border-radius: 10px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	
 	.nomargin {
