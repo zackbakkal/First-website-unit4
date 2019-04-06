@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="HandheldFriendly" content="true">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
 	<title>K-Bree Cosmetics</title>
 </head>
 
@@ -39,7 +39,7 @@
 		</nav>
 	</div>
 
-	<div id="contactform">
+	<div id="contactform" class="clearfix">
 		<form action="mailto:bzakki@hotmail.com" method="post" enctype="text/plain">
 			<label>Name</label><br>
 			<input placeholder="Your name here" type="text" name="name" tabindex="1" autofocus><br>
@@ -48,12 +48,13 @@
 			<label>*Comment</label><br>
 			<textarea placeholder="Your message here..." rows="10" cols="30" name="comment" tabindex="3"
 				required></textarea><br><br>
-			<input type="submit" value="Send" tabindex="4" id="send">
 			<input type="reset" value="Reset" tabindex="5" id="reset">
+			<input type="submit" value="Send" tabindex="4" id="send">
+
 		</form>
 	</div>
 
-	<footer class="white clearfix">
+	<footer class="clearfix">
 		<div id="contactinfo">
 			<ul>
 				<li><a href="mailto:zackbakkal@gmail.com"><img src="pics/email.png"

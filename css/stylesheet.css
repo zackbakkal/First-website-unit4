@@ -8,7 +8,6 @@
 	body {
 		width: 80%;
 		margin-left: 10%;
-		margin-top: 10px;
 		font-family: sans-serif, serif;
 	}
 	
@@ -60,7 +59,6 @@
 		padding: 5px;
 		margin: 20px;
 		background-color: #4CAF50;
-		color: black;
 	}
 	
 	td {
@@ -132,17 +130,13 @@
 	#contactinfo {
 		border-top: solid black 1px;
 		width: 100%;
-		color: black;
 	}
 	
 	#contactinfo ul {
-		list-style: none;
 		margin-top: 0;
 	}
-	
+
 	#contactinfo ul li {
-		text-decoration: none;
-		padding: 5px;
 		display: inline;
 	}
 	
@@ -150,10 +144,6 @@
 		width: 10%;
 		height: 10%;
 		margin-left: 10%;
-	}
-	
-	#contactinfo ul li a:hover {
-		color: black;
 	}
 	
 	#copyright {
@@ -184,6 +174,12 @@
 		width: 100%;
 	}
 
+	#controls {
+		width: 50%;
+		position: relative;
+		left: 50%;
+	}
+
 	#checkout {
 		background-color: #e49012;
 	}
@@ -193,31 +189,22 @@
 	}
 	
 	#clear, #checkout {
-		position: relative;
+        position: relative;
+        width: 100%;
+        padding: 1px;
+		margin: 10px;
 		display: block;
 		border-radius: 2px;
 		font-weight: bold;
-		width: 100%;
+		box-shadow: 0 0 5px 2px #2f3036;
 		text-align: center;
 	}
 
-	#controls {
-		width: 50%;
-		position: relative;
-		left: 50%;
-	}
-	
-	#controls div {
-		position: relative;
-		width: 100%;
-		padding: 1px;
-		margin: 10px;
-		box-shadow: 0 0 5px 2px #2f3036;
-	}
-
-	#controls div:active {
+	#clear:active, #checkout:active {
 		box-shadow: 0 0 0 0;
 	}
+
+	
 
 	.add {
 		background-color: #FF6F00;
@@ -287,10 +274,6 @@
 	
 	.sideimg {
 		width: 30%;
-	}
-	
-	.box-shadow {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	
 	.currentpagemenu {
