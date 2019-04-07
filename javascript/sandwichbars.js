@@ -66,14 +66,16 @@ function start() {
 * Change how the sandwich bars menu look.
 */
 function changeLook(className) {
+
     // Toggles between the bar1 class and the change class
-    bar1.classList.toggle(className + 1);
+    toggleClass(bar1, className + 1);
+    //bar1.classList.toggle(className + 1);
 
     // Toggles between the bar2 class and the change class
-    bar2.classList.toggle(className + 2);
+    toggleClass(bar2, className + 2);
 
     // Toggles between the bar3 class and the change class
-    bar3.classList.toggle(className + 3);
+    toggleClass(bar3, className + 3);
 
     // Add an event listner to the sanwichbar so that if it is clicked when the 
     // menu is shown the menu will hide
@@ -84,6 +86,41 @@ function changeLook(className) {
             resetSandwichBar();
         }
         , false);
+}
+
+/*
+* For Internet Explorer compatibility we use this function to toggle between
+* classes.
+*/
+function toggleClass(element, className) {
+    if (element.classList) {
+        // Toggles between the bar1 class and the change class
+        element.classList.toggle(className);
+
+        // Toggles between the bar2 class and the change class
+        element.classList.toggle(className);
+
+        // Toggles between the bar3 class and the change class
+        element.classList.toggle(className);
+    } else {
+        // For IE9
+
+        // Retrieve the class attribute content and split the
+        // words at the space to get an array of class names
+        var classes = bar1.className.split(" ");
+        // Retrieve the index of the class we want to toggle
+        var i = classes.indexOf(className);
+
+        // Check if that class exists
+        if (i >= 0)
+            //If so, remove it from the class list
+            classes.splice(i, 1);
+        else
+            // other wise we add it to the class list
+            classes.push(className);
+        // update the elements class names
+        element.className = classes.join(" ");
+    }
 }
 
 /*
