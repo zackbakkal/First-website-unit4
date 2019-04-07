@@ -25,6 +25,7 @@ function start() {
     // Retrieve the element from the DOM with the id named menu and
     // set its display attribute in the style to 'none'
     menu = document.getElementById("menu");
+    menu.style.display = "none";
 
     // Check if the user is using a device with min-width of 768px, if
     // so we show the menu
